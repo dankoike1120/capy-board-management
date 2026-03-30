@@ -629,23 +629,23 @@ if(sessionStorage.getItem('capy_auth')==='1'){
 <!-- KPI Cards Row 2 -->
 <div class="kpi-grid">
   <div class="kpi-card">
-    <div class="kpi-label">粗利 (Gross Profit)</div>
-    <div class="kpi-value">¥184.3M</div>
+    <div class="kpi-label">実質粗利 (Adj. Gross Profit)</div>
+    <div class="kpi-value">¥230.1M</div>
     <div class="kpi-change-row">
-      <span class="kpi-change positive">&#9650; 5.5%</span>
-      <span class="kpi-prev">前年: ¥174.7M</span>
+      <span class="kpi-change positive">&#9650; 4.3%</span>
+      <span class="kpi-prev">前年: ¥220.5M</span>
     </div>
-    <div class="kpi-note">粗利率: 66.0% &rarr; 69.4%（+3.4pp）<br>原価率改善により売上横ばいでも粗利¥9.6M増</div>
+    <div class="kpi-note">実質粗利率: 83.3% &rarr; 86.7%（+3.4pp）<br>会計粗利: ¥184.3M（粗利率 69.4%）</div>
   </div>
 
-  <div class="kpi-card">
-    <div class="kpi-label">営業利益 (Operating Income)</div>
-    <div class="kpi-value">¥24.8M</div>
+  <div class="kpi-card" style="background:linear-gradient(135deg,#34c759 0%,#248a3d 100%);color:#fff;">
+    <div class="kpi-label" style="color:rgba(255,255,255,0.7);">実質営業利益 (Adj. Operating Income)</div>
+    <div class="kpi-value">¥70.6M</div>
     <div class="kpi-change-row">
-      <span class="kpi-change positive">&#9650; 317%</span>
-      <span class="kpi-prev">前年: ¥5.9M</span>
+      <span class="kpi-change" style="color:#a8f0ba;">&#9650; 36.3%</span>
+      <span class="kpi-prev" style="color:rgba(255,255,255,0.6);">前年: ¥51.8M</span>
     </div>
-    <div class="kpi-note">営業利益率: 2.2% &rarr; 9.3%（+7.1pp）<br>原価削減¥8.7M＋販管費削減¥9.3M = ¥18M改善</div>
+    <div class="kpi-note" style="color:rgba(255,255,255,0.6);">実質営業利益率: 19.6% &rarr; 26.6%（+7.0pp）<br>会計営業利益: ¥24.8M（営業利益率 9.3%）</div>
   </div>
 
   <div class="kpi-card dark">
@@ -659,39 +659,63 @@ if(sessionStorage.getItem('capy_auth')==='1'){
   </div>
 </div>
 
+<!-- Adjustment Note -->
+<div style="background:#f0faf0;border-radius:12px;padding:16px 20px;margin-bottom:40px;font-size:12px;color:#1d1d1f;display:flex;align-items:flex-start;gap:10px;">
+  <span style="font-size:16px;">&#9432;</span>
+  <div><strong>実質ベースの調整：</strong>Capy Inc.（親会社）への外注費 ¥45.8M/11ヶ月（¥4.16M/月）は親子間取引のため、Capyグループとしての実質業績評価では売上原価から除外しています。会計上の数値も併記。</div>
+</div>
+
 <!-- Profitability Metrics -->
 <div class="section">
   <div class="section-title">収益性指標</div>
-  <div class="profit-grid">
-    <div class="profit-card">
-      <div class="metric-label">粗利率</div>
-      <div class="metric-value">69.4%</div>
-      <div class="metric-prev">前年 66.0%</div>
-      <div class="metric-arrow">+3.4pp</div>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;">
+    <!-- 実質ベース -->
+    <div style="background:#1d1d1f;border-radius:16px;padding:28px;">
+      <div style="font-size:13px;font-weight:600;color:#a1a1a6;margin-bottom:16px;">実質ベース（CapyInc除外）</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
+        <div style="text-align:center;">
+          <div style="font-size:11px;font-weight:600;color:#a1a1a6;margin-bottom:8px;">実質粗利率</div>
+          <div style="font-size:24px;font-weight:900;color:#34c759;letter-spacing:-1px;">86.7%</div>
+          <div style="font-size:11px;color:#a1a1a6;margin-top:2px;">前年 83.3%</div>
+          <div style="font-size:11px;color:#34c759;font-weight:600;">+3.4pp</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-size:11px;font-weight:600;color:#a1a1a6;margin-bottom:8px;">実質営業利益率</div>
+          <div style="font-size:24px;font-weight:900;color:#34c759;letter-spacing:-1px;">26.6%</div>
+          <div style="font-size:11px;color:#a1a1a6;margin-top:2px;">前年 19.6%</div>
+          <div style="font-size:11px;color:#34c759;font-weight:600;">+7.0pp</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-size:11px;font-weight:600;color:#a1a1a6;margin-bottom:8px;">実質経常利益率</div>
+          <div style="font-size:24px;font-weight:900;color:#34c759;letter-spacing:-1px;">26.9%</div>
+          <div style="font-size:11px;color:#a1a1a6;margin-top:2px;">前年 19.5%</div>
+          <div style="font-size:11px;color:#34c759;font-weight:600;">+7.4pp</div>
+        </div>
+      </div>
     </div>
-    <div class="profit-card">
-      <div class="metric-label">販管費率</div>
-      <div class="metric-value">60.1%</div>
-      <div class="metric-prev">前年 63.8%</div>
-      <div class="metric-arrow">-3.7pp</div>
-    </div>
-    <div class="profit-card">
-      <div class="metric-label">営業利益率</div>
-      <div class="metric-value">9.3%</div>
-      <div class="metric-prev">前年 2.2%</div>
-      <div class="metric-arrow">+7.1pp</div>
-    </div>
-    <div class="profit-card">
-      <div class="metric-label">経常利益率</div>
-      <div class="metric-value">9.6%</div>
-      <div class="metric-prev">前年 2.2%</div>
-      <div class="metric-arrow">+7.4pp</div>
-    </div>
-    <div class="profit-card">
-      <div class="metric-label">純利益率</div>
-      <div class="metric-value">7.0%</div>
-      <div class="metric-prev">前年 2.0%</div>
-      <div class="metric-arrow">+5.0pp</div>
+    <!-- 会計ベース -->
+    <div style="background:#fff;border-radius:16px;padding:28px;">
+      <div style="font-size:13px;font-weight:600;color:#86868b;margin-bottom:16px;">会計ベース（参考）</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
+        <div style="text-align:center;">
+          <div style="font-size:11px;font-weight:600;color:#86868b;margin-bottom:8px;">粗利率</div>
+          <div style="font-size:24px;font-weight:900;color:#0071e3;letter-spacing:-1px;">69.4%</div>
+          <div style="font-size:11px;color:#86868b;margin-top:2px;">前年 66.0%</div>
+          <div style="font-size:11px;color:#0071e3;font-weight:600;">+3.4pp</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-size:11px;font-weight:600;color:#86868b;margin-bottom:8px;">営業利益率</div>
+          <div style="font-size:24px;font-weight:900;color:#0071e3;letter-spacing:-1px;">9.3%</div>
+          <div style="font-size:11px;color:#86868b;margin-top:2px;">前年 2.2%</div>
+          <div style="font-size:11px;color:#0071e3;font-weight:600;">+7.1pp</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-size:11px;font-weight:600;color:#86868b;margin-bottom:8px;">純利益率</div>
+          <div style="font-size:24px;font-weight:900;color:#0071e3;letter-spacing:-1px;">7.0%</div>
+          <div style="font-size:11px;color:#86868b;margin-top:2px;">前年 2.0%</div>
+          <div style="font-size:11px;color:#0071e3;font-weight:600;">+5.0pp</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
