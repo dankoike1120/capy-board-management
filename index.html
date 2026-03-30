@@ -1170,8 +1170,172 @@ if(sessionStorage.getItem('capy_auth')==='1'){
   </div>
 </div>
 
+<!-- FIDO Sales Pipeline -->
+<div class="section page-break">
+  <div class="section-title">FIDO Sales Pipeline</div>
+
+  <!-- Pipeline Summary Cards -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:28px;">
+    <div style="background:#fff;border-radius:12px;padding:20px 24px;">
+      <div style="font-size:12px;font-weight:500;color:#86868b;margin-bottom:8px;">3Q記載企業数</div>
+      <div style="font-size:36px;font-weight:900;color:#1d1d1f;letter-spacing:-1px;">14<span style="font-size:16px;font-weight:600;">社</span></div>
+    </div>
+    <div style="background:#fff;border-radius:12px;padding:20px 24px;">
+      <div style="font-size:12px;font-weight:500;color:#86868b;margin-bottom:8px;">Q4 新規追加</div>
+      <div style="font-size:36px;font-weight:900;color:#0071e3;letter-spacing:-1px;">2<span style="font-size:16px;font-weight:600;">社</span></div>
+    </div>
+    <div style="background:#fff;border-radius:12px;padding:20px 24px;">
+      <div style="font-size:12px;font-weight:500;color:#86868b;margin-bottom:8px;">ステージアップ</div>
+      <div style="font-size:36px;font-weight:900;color:#34c759;letter-spacing:-1px;">1<span style="font-size:16px;font-weight:600;">社</span></div>
+    </div>
+    <div style="background:#fff;border-radius:12px;padding:20px 24px;">
+      <div style="font-size:12px;font-weight:500;color:#86868b;margin-bottom:8px;">失注</div>
+      <div style="font-size:36px;font-weight:900;color:#ff3b30;letter-spacing:-1px;">1<span style="font-size:16px;font-weight:600;">社</span></div>
+    </div>
+  </div>
+
+  <!-- Pipeline Comparison Q3→Q4 -->
+  <div class="product-table-container" style="margin-bottom:28px;">
+    <div style="font-size:14px;font-weight:700;margin-bottom:16px;">パイプライン比較：Q3 &rarr; Q4 &rarr; 現状</div>
+    <div style="font-size:12px;color:#86868b;margin-bottom:16px;">4Q現状案件（Salesforce 記録あり企業の変化）</div>
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>企業名</th>
+          <th class="right">初回登録</th>
+          <th>Salesforceステージ</th>
+          <th>3Qのステータス</th>
+          <th>変化</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="product-name" style="font-weight:700;">レオス・キャピタルワークス</td>
+          <td class="right">Q1前</td>
+          <td>内示 80%</td>
+          <td><span class="badge" style="background:#d4edda;color:#155724;">高確度（提示済）</span></td>
+          <td><span class="badge" style="background:#d4edda;color:#155724;">&#8593; ステージアップ</span></td>
+        </tr>
+        <tr>
+          <td class="product-name">CHEER証券</td>
+          <td class="right">Q1前</td>
+          <td>見込み 30%</td>
+          <td><span class="badge" style="background:#ffeaea;color:#ff3b30;">失注</span></td>
+          <td><span class="badge" style="background:#ffeaea;color:#ff3b30;">&#10005; 失注</span></td>
+        </tr>
+        <tr>
+          <td class="product-name">株式会社デジタルガレージ</td>
+          <td class="right">Q2</td>
+          <td>見込み 30%</td>
+          <td><span class="badge" style="background:#fff3cd;color:#856404;">中確度（見込み）</span></td>
+          <td style="color:#86868b;">&rarr; 変化なし</td>
+        </tr>
+        <tr>
+          <td class="product-name">日本住宅ローン株式会社</td>
+          <td class="right">Q1</td>
+          <td>見込み 30%</td>
+          <td><span class="badge" style="background:#fff3cd;color:#856404;">中確度（見込み）</span></td>
+          <td style="color:#86868b;">&rarr; 変化なし</td>
+        </tr>
+        <tr>
+          <td class="product-name">TIS株式会社</td>
+          <td class="right">Q1</td>
+          <td>決済者以外と面談 20%</td>
+          <td style="color:#86868b;">初期〜中期検討</td>
+          <td style="color:#86868b;">&rarr; 変化なし</td>
+        </tr>
+        <tr>
+          <td class="product-name">アクセンチュア株式会社</td>
+          <td class="right"><span class="badge" style="background:#e3f2fd;color:#0071e3;">Q3 10月</span></td>
+          <td>決済者以外と面談 20%</td>
+          <td style="color:#86868b;">初期〜中期検討</td>
+          <td style="color:#86868b;">&rarr; 変化なし</td>
+        </tr>
+        <tr>
+          <td class="product-name">ブテロン・コンサルティング</td>
+          <td class="right"><span class="badge" style="background:#e3f2fd;color:#0071e3;">Q3 12月</span></td>
+          <td>決済者以外と面談 20%</td>
+          <td style="color:#86868b;">ー 未掲載</td>
+          <td style="color:#86868b;">確認要</td>
+        </tr>
+        <tr>
+          <td class="product-name">上新電機株式会社</td>
+          <td class="right"><span class="badge" style="background:#e8f5e9;color:#34c759;">Q4 2月</span></td>
+          <td>決済者以外と面談 20%</td>
+          <td style="color:#86868b;">ー 未掲載</td>
+          <td><span class="badge" style="background:#e8f5e9;color:#2e7d32;">Q4 新規</span></td>
+        </tr>
+        <tr>
+          <td class="product-name">アットホーム株式会社</td>
+          <td class="right"><span class="badge" style="background:#e8f5e9;color:#34c759;">Q4 3月</span></td>
+          <td>決済者以外と面談 20%</td>
+          <td style="color:#86868b;">ー 未掲載</td>
+          <td><span class="badge" style="background:#e8f5e9;color:#2e7d32;">Q4 新規</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 3Q Pending Deals -->
+  <div class="product-table-container">
+    <div style="font-size:14px;font-weight:700;margin-bottom:4px;">3Q記載案件（4Qでペンディングに変化）</div>
+    <div style="font-size:12px;color:#86868b;margin-bottom:16px;">他社決定ではなく時期要因によるペンディングが大半 &mdash; 掘り起こし対象</div>
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>企業名</th>
+          <th>3Qのステータス</th>
+          <th>業種メモ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="product-name">株式会社ジーンクエスト</td>
+          <td><span class="badge" style="background:#d4edda;color:#155724;">高確度（提示済）</span></td>
+          <td>データ活用系SaaS</td>
+        </tr>
+        <tr>
+          <td class="product-name">auペイメント株式会社</td>
+          <td><span class="badge" style="background:#fff3cd;color:#856404;">中確度（見込み）</span></td>
+          <td>決済</td>
+        </tr>
+        <tr>
+          <td class="product-name">ライフカード株式会社</td>
+          <td><span class="badge" style="background:#fff3cd;color:#856404;">中確度（見込み）</span></td>
+          <td>クレジットカード</td>
+        </tr>
+        <tr>
+          <td class="product-name">日立ソリューションズ・クリエイト</td>
+          <td style="color:#86868b;">初期〜中期検討</td>
+          <td>SI</td>
+        </tr>
+        <tr>
+          <td class="product-name">プロトン・コンサルティング</td>
+          <td style="color:#86868b;">初期〜中期検討</td>
+          <td>コンサル</td>
+        </tr>
+        <tr>
+          <td class="product-name">日本電子計算（JIP）</td>
+          <td style="color:#86868b;">初期〜中期検討</td>
+          <td>SI</td>
+        </tr>
+        <tr>
+          <td class="product-name">コープきんき事業連合</td>
+          <td style="color:#86868b;">初期〜中期検討</td>
+          <td>流通</td>
+        </tr>
+        <tr>
+          <td class="product-name">日立産業制御ソリューションズ</td>
+          <td style="color:#86868b;">初期〜中期検討</td>
+          <td>SI</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
 <div style="text-align:center;color:#86868b;font-size:12px;margin-top:32px;padding-bottom:32px;">
-  Generated on 2026-03-31 | Data Source: MoneyForward P/L Monthly Report
+  Generated on 2026-03-31 | Data Source: MoneyForward P/L Monthly Report / Salesforce Pipeline
 </div>
 
 </body>
